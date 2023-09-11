@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task7_CSS</title>
+    <style>
+        body{
+            background-color: rgb(220, 12, 102);
+        }
+        h1{
+            color: blue;
+        }
+        #reg{
+            width: 340px;
+            border-radius: 5px;
+            height: 40px;
+            cursor: pointer;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 0 auto;
+            background-color: rgb(109, 2, 48);
+        }
+        table, th, td {
+            height: 10px;
+            color: white;
+            font-weight: lighter;
+        }
+        th, td {
+            padding: 6px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="tel"], textarea[name="address"] {
+            width: 50%;
+        }
+        .c1{
+            font-weight: bold;
+            text-align: left;
+            padding-left: 150px;
+        }
+    </style>
+</head>
+<body>
+    <center><h2>CSS - Task 7</h2></center>
+    <center><h3>Vineetha C</h3></center>
+    <table>
+        <tr >
+            <td class="c1">Name:</td>
+            <td><input type="text" name="first_name" value="Your name" required /></td>
+        </tr>
+        <tr>
+            <td class="c1">Email:</td>
+            <td><input type="email" name="email" value="Your email" required /></td>
+        </tr>
+        <tr>
+            <td class="c1">Password:</td>
+            <td><input type="password" name="password" required /></td>
+        </tr>
+        <tr>
+            <td class="c1">Phone Number:</td>
+            <td><input type="tel" name="phone_number" required /></td>
+        </tr>
+        <tr>
+            <td class="c1">Gender:</td>
+            <td>
+                Male:<input type="radio" name="gender" value="Male" /> 
+                Female:<input type="radio" name="gender" value="Female" /> 
+                Other:<input type="radio" name="gender" value="Others" />  
+            </td>
+        </tr>
+        <tr>
+            <td class="c1">Language:</td>
+            <td>
+                <select name="country" required>
+                    <option value="lang">Select language</option>
+                    <option value="eng">English</option>
+                    <option value="kann">Kannada</option>
+                    <option value="hin">Hindi</option>
+                    <option value="tel">Telugu</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="c1">Zipcode:</td>
+            <td><input type="text" name="zip" required /></td>
+        </tr>
+        <tr>
+            <td class="c1">About:</td>
+            <td><textarea name="address" rows="3" cols="50" required /></textarea></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <center><input type="submit" value="Register" id="reg" /></center>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

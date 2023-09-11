@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task6_CSS</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        .container {
+            width: 500px;
+        }
+        .pwd {
+            float: right;
+            padding-top: 10px;
+        }
+        .form {
+            text-align: left;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 5px 10px;
+            margin: 10px 0;
+        }
+        input[type="password"] {
+            width: 100%;
+            padding: 5px 10px;
+            margin: 10px 0;
+        }
+        .pic {
+            width: 500px;
+        }
+        .login {
+            color: white;
+            background-color: rgb(49, 160, 47);
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            /* width: 109%;
+            padding: 8px 20px;
+            margin: 8px 0; */
+            width: 525px;
+            height: 30px ;
+            padding: 5px 10px;
+            margin: 10px 0;
+        }
+        .cancel {
+            background-color: red;
+            color: white;
+            border: none;
+            width: auto;
+            margin-top: 5px;
+            padding: 5px 10px;
+            float: left;
+            border-radius: 5px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .footer {
+            padding-top: 10px;
+            width: 109%;
+            height: 40px;
+            background-color: #ebebeb;
+        }
+      </style>
+</head>
+<body>
+    <center><h2>CSS - Task 6</h2></center>
+    <center><h3>Vineetha C</h3></center>
+    <center>
+        <div class="container">
+            <div class="pic">
+                <img src="./pic.jpeg" width="200" height="200" alt="" />
+            </div>
+            <br />
+            <div class="form">
+                <b>Username</b><input type="text" placeholder="Enter Username" />
+                <br />
+                <b>Password</b><input type="password" placeholder="Enter Password" />
+                <br />
+                <button class="login">Login</button>
+                <br />
+                <input type="checkbox" checked />Remember me
+                <br />
+            </div>
+            <br />
+            <div class="footer">
+                <button class="cancel">Cancel</button>
+                <span class="pwd">Forgot <a href="#">password?</a></span>
+            </div>
+            </div>
+      </center>
+</body>
+</html>
